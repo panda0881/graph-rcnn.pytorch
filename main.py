@@ -123,7 +123,7 @@ def main():
         model = train(cfg, args)
     else:
         print(cfg)
-        cfg.DATASET.PATH = 'datasets/mini_vg'
+        cfg.DATASET.PATH = 'datasets/mini-vg'
         print(cfg)
         test(cfg, args)
 
