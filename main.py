@@ -123,6 +123,8 @@ def main():
         model = train(cfg, args)
     else:
         print(cfg)
+        cfg.dataset.path = 'datasets/mini_vg'
+        print(cfg)
         test(cfg, args)
 
 if __name__ == "__main__":
