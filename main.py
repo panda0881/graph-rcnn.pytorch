@@ -122,9 +122,9 @@ def main():
     if not args.inference:
         model = train(cfg, args)
     else:
-        print(cfg)
-        cfg.DATASET.PATH = 'datasets/mini-vg'
-        print(cfg)
+        # print(cfg)
+        # cfg.DATASET.PATH = 'datasets/mini-vg'
+        # print(cfg)
         test(cfg, args)
 
 if __name__ == "__main__":
